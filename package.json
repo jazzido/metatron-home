@@ -1,0 +1,21 @@
+{
+    "name": "metatron-home",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "parcel index.html",
+        "build": "parcel build index.html"
+    },
+    "dependencies": {
+        "d3-array": "^2.2.0",
+        "d3-selection": "^1.4.0",
+        "delegate": "^3.2.0",
+        "lodash": "^4.17.11",
+        "lodash.product": "^18.9.19",
+        "typeface-cooper-hewitt": "^0.0.44"
+    },
+    "devDependencies": {
+        "cssnano": "^4.1.10"
+    }
+}

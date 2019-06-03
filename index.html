@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div id="svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 435 482"
+          version="1.0"
+        >
+            <defs>
+                <filter id="glow" filterUnits="userSpaceOnUse">
+              <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+              <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <g id="cube-outer-circles">
+              <path
+                  d="M261.626 391.167a36.014 36.014 0 1 1-72.028 0 36.014 36.014 0 1 1 72.028 0z"
+                  class="circle-main"
+                  id="ursino"
+                  fill="none"
+                  stroke="#000"
+                  stroke-dashoffset="13.05"
+              />
+              <path
+                  d="M261.626 103.053a36.014 36.014 0 1 1-72.028 0 36.014 36.014 0 1 1 72.028 0z"
+                  class="circle-main"
+                  id="circle-metatron"
+                  fill="none"
+                  stroke="#000"
+                  stroke-dashoffset="13.05"
+              />
+              <path
+                  d="M135.96 175.081a36.014 36.014 0 1 1-72.03 0 36.014 36.014 0 1 1 72.03 0z"
+                  fill="none"
+                  stroke="#000"
+                  stroke-dashoffset="13.05"
+              />
+              <path
+                  d="M387.293 175.081a36.014 36.014 0 1 1-72.029 0 36.014 36.014 0 1 1 72.029 0z"
+                  fill="none"
+                  stroke="#000"
+                  stroke-dashoffset="13.05"
+              />
+              <path
+                  d="M135.96 319.138a36.014 36.014 0 1 1-72.03 0 36.014 36.014 0 1 1 72.03 0z"
+                  class="circle-main"
+                  id="balestra"
+                  fill="none"
+                  stroke="#000"
+                  stroke-dashoffset="13.05"
+              />
+              <path
+                  d="M387.293 319.138a36.014 36.014 0 1 1-72.029 0 36.014 36.014 0 1 1 72.029 0z"
+                  class="circle-main"
+                  fill="none"
+                  stroke="#000"
+                  stroke-dashoffset="13.05"
+              />
+          </g>
+          <g id="cube-inner-circles">
+            <path
+              d="M261.626 247.11a36.014 36.014 0 1 1-72.028 0 36.014 36.014 0 1 1 72.028 0z"
+              class="SHXMtfwq_0"
+              fill="none"
+              stroke="#000"
+              stroke-dashoffset="13.05"
+            />
+            <path
+              d="M261.626 319.138a36.014 36.014 0 1 1-72.028 0 36.014 36.014 0 1 1 72.028 0z"
+              class="SHXMtfwq_1"
+              fill="none"
+              stroke="#000"
+              stroke-dashoffset="13.05"
+            />
+            <path
+              d="M261.626 175.081a36.014 36.014 0 1 1-72.028 0 36.014 36.014 0 1 1 72.028 0z"
+              class="SHXMtfwq_2"
+              fill="none"
+              stroke="#000"
+              stroke-dashoffset="13.05"
+            />
+            <path
+              d="M198.793 211.095a36.014 36.014 0 1 1-72.029 0 36.014 36.014 0 1 1 72.029 0z"
+              class="SHXMtfwq_3"
+              fill="none"
+              stroke="#000"
+              stroke-dashoffset="13.05"
+            />
+            <path
+              d="M324.46 211.095a36.014 36.014 0 1 1-72.029 0 36.014 36.014 0 1 1 72.028 0z"
+              class="SHXMtfwq_4"
+              fill="none"
+              stroke="#000"
+              stroke-dashoffset="13.05"
+            />
+            <path
+              d="M198.793 283.124a36.014 36.014 0 1 1-72.029 0 36.014 36.014 0 1 1 72.029 0z"
+              class="SHXMtfwq_5"
+              fill="none"
+              stroke="#000"
+              stroke-dashoffset="13.05"
+            />
+            <path
+              d="M324.46 283.124a36.014 36.014 0 1 1-72.029 0 36.014 36.014 0 1 1 72.028 0z"
+              class="SHXMtfwq_6"
+              fill="none"
+              stroke="#000"
+              stroke-dashoffset="13.05"
+            />
+          </g>
+          <g
+            font-weight="200"
+            font-size="27.698"
+            font-family="Cooper Hewitt"
+            letter-spacing="0"
+            word-spacing="0"
+            stroke-width=".292"
+            stroke="white"
+            fill="none"
+          >
+            <text
+              style="line-height:1.25;"
+              x="167.068"
+              y="61.158"
+              font-weight="500"
+            >
+              metatron
+            </text>
+            <text y="451.218" x="190.091" style="line-height:1.25;">
+              ursino
+            </text>
+            <text
+              style="line-height:1.25;-inkscape-font-specification:'Helvetica Neue Bold'"
+              x="51.142"
+              y="377.244"
+            >
+              balestra
+            </text>
+            <text y="378.227" x="299.87" style="line-height:1.25;">
+              aristarán
+            </text>
+          </g>
+          <g id="cube-animated-dots"></g>
+          <g id="cube-single-lines"></g>
+          <g id="cube-glow-lines"></g>
+        </svg>
+      </div>
+    </main>
+    <video autoplay loop id="video-background" muted plays-inline>
+      <source src="./llamada_insta.mp4" type="video/mp4" />
+    </video>
+    <script src="./index.js"></script>
+  </body>
+</html>
