@@ -66,13 +66,24 @@ for (var i = 0; i < lineSegments.length - 1; i++) {
   }
   }*/
 
+const centerCircle = d3Select("svg #circle-center").node();
+const centerCoords = {
+  x: centerCircle.getAttribute("cx"),
+  y: centerCircle.getAttribute("cy")
+};
+
+console.log(centerCoords);
+
 function getCircleCenters(selector) {
   const circleCenters = [];
   d3SelectAll(selector).each(function(c) {
     const { x, y, width, height } = this.getBBox();
+    // const x = this.getAttribute('x');
+    // const y = this.getAttribute('y');
     circleCenters.push({
       x: x + width / 2,
       y: y + height / 2,
+      r: width / 2,
       id: this.getAttribute("class")
     });
   });
@@ -97,7 +108,7 @@ function getLinesBetweenCircleCenters(circleCenters) {
 }
 
 const circleCenters = getCircleCenters(
-  "svg #cube-outer-circles path, svg #cube-inner-circles path"
+  "svg #cube-outer-circles circle, svg #cube-inner-circles circle"
 );
 const lines = getLinesBetweenCircleCenters(circleCenters);
 const lineAnimationDurations = lines.map(line => random(20, 40) / 10);

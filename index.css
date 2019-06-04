@@ -56,9 +56,11 @@ svg #cube-animated-dots circle {
     fill: red;
 }
 
-svg line {
+svg line, svg circle {
     stroke: white;
+    fill: none;
 }
+
 
 svg #cube-glow-lines line {
     stroke-width: 2.5px;
