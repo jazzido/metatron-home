@@ -11,7 +11,7 @@
         "d3-array": "^2.2.0",
         "d3-selection": "^1.4.0",
         "delegate": "^3.2.0",
-        "lodash": "^4.17.11",
+        "lodash": "^4.17.19",
         "lodash.product": "^18.9.19",
         "typeface-cooper-hewitt": "^0.0.44"
     },
